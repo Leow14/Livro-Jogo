@@ -38,8 +38,11 @@ body{
     align-items: center;
     flex-direction: row;
     margin: center;
-    padding-top: 100px;
     padding-left: 2vw;
+    position: relative;
+    left:20%;
+    top:40%;
+    
 }
 
 input{
@@ -74,32 +77,47 @@ input{
 
 .content{
     padding: 5px 0 0 5px;
+    height: 100%;
+    width: 100%;
 }
 
 .box-game{
-    border: 5px solid rgb(29, 34, 2)
+    border: 5px solid rgb(29, 34, 2);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.button {
+button{
     padding: 15px 25px;
+    height: auto;
+    width: auto;
     font-size: 24px;
     text-align: center;
     cursor: pointer;
     outline: none;
     color: rgb(255, 255, 255);
-    background-color: #04AA6D;
+    background-color: #aa7004;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    transition: 0.5s;
   }
 
-  .button:hover {background-color: #3e8e41}
+button:hover {
+    background-color: #795005;
+    box-shadow: 4px 6px #999;
+}
   
-  .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
+button:active {
+    background-color: #e79b0e;
+    box-shadow: 0 3px rgb(58, 57, 57);
     transform: translateY(4px);
   } 
+
+.pao button{
+    width: auto;
+    height: auto;
+}
+
 
   /* //style="padding: 15px 25px; font-size: 24px; text-align: center; cursor: pointer; outline: none; color: rgb(255, 255, 255); background-color: #04AA6D; border: none;  border-radius: 15px; box-shadow: 0 9px #999; */
 
