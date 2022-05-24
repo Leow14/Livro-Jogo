@@ -1,0 +1,110 @@
+.box {
+    width: 43vw;
+    height: 96vh;
+    background: #fff;
+    opacity: 0.5;
+    text-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./imgs/desert.png);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    max-width: fit-content;
+}
+
+.box p{
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5vw;
+}
+
+.input{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    padding-top: 100px;
+    padding-left: 2vw;
+}
+
+input{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.texto{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;  
+}
+
+.botao{
+    width: 51px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 5px 0 0 5px;
+}
+
+.box-game{
+    border: 5px solid rgb(29, 34, 2)
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  } 
+
+  /* //style="padding: 15px 25px; font-size: 24px; text-align: center; cursor: pointer; outline: none; color: rgb(255, 255, 255); background-color: #04AA6D; border: none;  border-radius: 15px; box-shadow: 0 9px #999; */
+
+
+
+
+
+
