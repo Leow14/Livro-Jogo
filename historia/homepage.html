@@ -14,9 +14,11 @@
         <div style="position: relative;" class="box-game">
             <div class="content" id="content" style="position: absolute;  z-index: 999;">
                 <p class="letra">Qual o seu nome aventureiro?</p>
-                <div class="input">
-                    <a><input id="nome" placeholder="Nome"> </input></a>
+                <div class="botao_principal">
                     <button onclick="iniciar() ; inicio()"> Continuar </button>
+                </div>
+                <div class ="input"> 
+                    <a><input id="nome" placeholder="Nome"> </input></a>
                 </div>
             </div>
             <div class="box" id="box" style="z-index: 1;">
@@ -92,8 +94,13 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Apesar do caminho pro bosque do elfo ser bem mais traçoeiro, com certeza a ajuda dos elfos selvagens iria te ajudar. Além de serem excelentes com magia, eles também são muito hospitaleiros e tem muita informação sobre tudo. Talvez eles possam te ajudar a enteder o que de fato aconteceu com você. O caminho é sinuoso, e em diversos momentos, sons e movimentações estranhas se perpetuam sobre o lugar. Chegando a uma bifurcação, você ouve um urro muito alto e uma movimetação veloz a sua direita, e escuta barulho de rochas pesadas batendo muito forte no chão, com passos pesados a sua esquerda. 
-        <b style="font-size: 28px">Você tem que tomar uma decisão rápido, antes que eles te alcancem.</b> 
+        <b style="font-size: 28px">Você tem que tomar uma decisão rápido, antes que eles te alcancem.</b>
+            <br>
+            <br>
+            <div class="pao"> 
             <button onclick="pantera()">Ir pelo urro estridente.</button>
+            <br>
+            <br>
             <button onclick="golem()">Seguir pelas rochas pesadas.</button>`
     }
 
@@ -106,8 +113,13 @@
         var content = document.getElementById("content");
         content.innerHTML = `É assustador imaginar uma tavera com luzes acessas em uma cidade destruída e abandonada, mas para você é a melhor opção. Talvez lá eles consigam te ajudar a voltar para o seu lar. Entrando, você se depara com uma música e barulhos de de pessoas bebendo e conversando, mas nínguem aparece para para você. Um sombra se aproxima de você e susurra algo como boas vindas e oferece uma bebida com uma das mãos. Você percebe que o personagem em questão é literalmente como uma sombra em formato humanóide.
         <b style="font-size: 28px">Aceitar ou não a bebida?</b>
-<a><button class ="botao" onclick="beber_taverna()">Aceitar</button></a> 
-<a><button class ="botao" onclick="cassino()">Negar e ir para a próxima cidade</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="beber_taverna()">Aceitar</button></a> 
+        <br>
+        <br>
+        <a><button class ="botao" onclick="cassino()">Negar e ir para a próxima cidade</button></a>`
     }
 
     function homem_misterioso() {
@@ -118,8 +130,13 @@
         var content = document.getElementById("content");
         content.innerHTML = `Uma taverna?? No meio de uma cidade arruinada? Com luzes acessas e pessoas dentro? JAMAIS. Melhor sair da cidade o mais rapido possível, você não tá aqui para beber, e sim para chegar na sua casa o mais rapido possível. Na saída da cidade, um vulto com uma capa preta te chama. "Olá <nome>, lembra de mim?" "Vi que está consciente. Precisa me seguir, antes que eles façam algo.
         <b style="font-size: 28px">Seguir ou não?</b>
-<a><button class ="botao" onclick="conhecer_anciao()">Seguir</button></a> 
-<a><button class ="botao" onclick="encontrar_upl()">Correr para o lago</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+    <a><button class ="botao" onclick="conhecer_anciao()">Seguir</button></a>
+        <br>
+        <br>
+    <a><button class ="botao" onclick="encontrar_upl()">Correr para o lago</button></a>`
     }
 
     function pantera() {
@@ -130,8 +147,13 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Na urgência do momento, você acaba escolhendo ir pelo caminho do urro do possível animal. Correndo, você se depara com uma pantera selvagem, atacando sua presa. 
-        <b style="font-size: 28px">Você tenta passar correndo, ou tenta ser furtivo?</b> 
+        <b style="font-size: 28px">Você tenta passar correndo, ou tenta ser furtivo?</b>
+        <br>
+        <br>
+        <div class="pao">
         <button onclick="furtivo_pantera()">Ser furtivo</button>
+        <br>
+        <br>
         <button onclick="correr_pantera()">Correr</button>`
     }
 
@@ -145,7 +167,12 @@
         content.innerHTML = `Rochas pesadas? Uma avalanche talvez? Você pensa. Mas chegando no lugar, você percebe que na verdade um golem te aguardava, enquanto andava com pasos pesados em sua direção. Ele pode ser lento, mas o caminho estreito tem enormes paredes que impedem que você passe por ele rapidamente. Mas agora você se lembra de uma coisa, você era um mago antes! E ainda se lembra de alguns feitiços!
         No momento você só se lembra de dois feitiços. 
         <b style="font-size: 28px">Qual usar?</b>
+        <br>
+        <br>
+        <div class="pao">
         <button onclick="luz_golem()">Raio de luz</button>
+        <br>
+        <br>
         <button onclick="amizade_golem()">Amizade animal</button>`
     }
 
@@ -157,7 +184,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = ` Você desesperadamente corre na direção oposta da pantera e em direção a vila dos elfos. A pantera te percebe e corre em sua direção, o problema é, ela MUITO mais rapida que você. E você não lembra de magias rapidas o suficiete para usar nessa ocasião. Poucos segundos depois ela te alcança...
-<a><button class ="botao" onclick="morrer()">MORTE</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="morrer()">MORTE</button></a>`
 
     }
 
@@ -168,9 +198,13 @@
 
         var content = document.getElementById("content");
         content.innerHTML = ` Você consegue manter a calma e tenta passar furtivo pela pantera enquato ela devora os últimos pedaços de sua presa. Quando você pega uma distância segura da pantera, você percebe que ela te percebeu e correu em sua direção. No calor do momento você se lembra de dois poderosos feitiços, Amizade Animal e Raio de luz. Enquanto isso a pantera corre ferozmente atrás de você.
-        <b style="font-size: 28px">O que fazer?</b><br>
+        <b style="font-size: 28px">O que fazer?</b>
+        <br>
+        <br>
         <div class="pao">
     <button class ="botao" onclick="amizade_pantera()">Amizade Animal</button><br>
+        <br>
+        <br>
     <button class ="botao" onclick="luz_pantera()">Raio de luz</button></div>`
     }
 
@@ -181,7 +215,10 @@
         fundo.style.backgroundImage = "url('./imgs/raioLuz.png')";
         var content = document.getElementById("content");
         content.innerHTML = `Você usa raio de luz, a pantera por pouco tempo se cega e você ganha um tempo para correr. Você corre o mais rapido possível durante 2 minutos, mas a pantera é MUITO mais rapida que você. E te alcança. Infelizmente você não consegue usar mais nenhum feitiço. A pantera te devora por inteiro.<br>
-<a><button class ="botao" onclick="morrer()">MORTE</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="morrer()">MORTE</button></a>`
 
     }
 
@@ -192,6 +229,9 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você se concentra, usa cânticos antigos, faz sons com a boca e gestos estranhos, uma luz sai de sua mão e alcança a pantera. Mentalmente, você manda ela parar de te seguir e voltar para a floresta. Ela obedece, e você se aproxima da vila dos elfos.<br>
+        <br>
+        <br>
+        <div class="pao">
         <a><button class ="botao" onclick="vila_elfo()">Ir para a vila elfo</button></a>`
         //Ir para os elfos
     }
@@ -203,6 +243,9 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você usa Raio de luz, um feitiço que cega temporariamente os seus oponentes, não pareceu surtir tanto efeito no golem. Mas foi o suficiente para distrair e você passar correndo por ele.
+        <br>
+        <br>
+        <div class="pao">
         <a><button class ="botao" onclick="vila_elfo()">Ir para a vila elfo</button></a>`
         //ir para a vila elfo
     }
@@ -215,7 +258,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você lembra de um feitiço poderoso. Essa magia deixa você convencer uma besta que você não quer prejudicar. O golem pode parar de te atacar afinal! Você concentra, usa palavras estranhas com entonações esquisitas faz gestos com a mão e com o corpo, ... E CONSEGUE ... mas nada acontece. Por que nada aconteceu? O golem simplesmente te ataca, sem "pensar" duas vezes. E ai você percebe, ele não era uma besta...
-    <a><button class ="botao" onclick="morrer()">MORTE</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="morrer()">MORTE</button></a>`
     }
 
     function vila_elfo() {
@@ -229,9 +275,18 @@
         "Vim atrás de respostas, perdi minha memória, e preciso voltar pra minha vila natal. Mas antes precisava lembrar de alguns feitiços"
         "Ah, então você vai adorar nossa biblioteca, lá tem diversos pergaminhos que ensinam diversas magias, mas a entrada é paga, caso não tenha dinheiro, posso te mostrar o caminho para a próxima cidade."
         <b style="font-size: 28px">O que você vai escolher?</b> 
-<a><button class ="botao" onclick="vila_natal()">Ir para a próxima cidade</button></a> 
-<a><button class ="botao" onclick="biblioteca()">Ir para a biblioteca</button></a> 
-<a><button class ="botao" onclick="roubar_elfo()">Roubar o elfo</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="vila_natal()">Ir para a próxima cidade</button></a> 
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="biblioteca()">Ir para a biblioteca</button></a> 
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="roubar_elfo()">Roubar o elfo</button></a>`
     }
 
     function vila_natal() {
@@ -242,8 +297,14 @@
         var content = document.getElementById("content");
         content.innerHTML = `Você caminha em mais uma estrada tranquila, apenas alguns comerciantes e peregrinos passam por você, mas todos estão ou com pressa, ou são bem amigáveis. No entanto, após horas de caminhar, você chega a próxima cidade e você percebe que é sua vila natal, destruída e em chamas, você percebe que a batalha ainda está acontecendo, e ao olhar mais perto das casas, percebe que androides como aquele que você viu quando acordou no deserto estão atacando sua vila e saqueando as casas, os moradores da vila também estão atacando os androides com seus últimos recursos, e a batalha não parece ter fim. Os androides ainda não te notaram, e parece que 5 deles ainda sobraram. 
         <b style="font-size: 28px">O que fazer?</b> 
-<a><button class ="botao" onclick="concentrar_vila_natal()">Se concentrar e lembrar dos seus antigos feitiços</button></a> 
-<a><button class ="botao" onclick="raio_luz_vila_natal()">Usar raio de luz como um ataque</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="concentrar_vila_natal()">Se concentrar e lembrar dos seus antigos feitiços</button></a> 
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="raio_luz_vila_natal()">Usar raio de luz como um ataque</button></a>`
     }
 
     function biblioteca() {
@@ -254,9 +315,18 @@
         var content = document.getElementById("content");
         content.innerHTML = `Dentro da biblioteca, você encontra diversos livros e pergaminhos mágicos que com certeza irão te ajudar na sua jornada, em um dos livros, você vê em uma estante específica, 2 pergaminhos. 
         <b style="font-size: 28px">Como quer testa-los?</b>
-<a><button class ="botao" onclick="polimorfia()">Feitiço de polimorfia</button></a>
-<a><button class ="botao" onclick="minecraft()">Feitiço de portal</button></a>
-<a><button class ="botao" onclick="vila_natal()">Ir para a próxima cidade</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="polimorfia()">Feitiço de polimorfia</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="minecraft()">Feitiço de portal</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="vila_natal()">Ir para a próxima cidade</button></a>`
     }
 
     function roubar_elfo() {
@@ -299,10 +369,19 @@
         content.innerHTML = `Você aceita...? Sim, você aceita. Apesar do clima ser assustador antes, você já está se acostumando, e agora nem está tão assustador assim. Você pega o copo e a bebida estava quente e agradável ao seu paladar. Você tenta conversar com o barman mas ninguém responde. No entanto, ele entrega uma carta misteriosa para você, com uma grafia estranha e garranchos indescritíveis:
         ".sogimini seroip sues ratorred ed zapac ,osoredop otium oçitief mu ieranisne et ossi rezif eS .oruo ed adeom amu a otnuj ,avoc ahnim ed amic me siuza salatép moc rolf amu eugoj e ,ogal o mes euqsob o éta áv ,ierasnepmocer et ue e eduja em rovaf rop ,oãçidlam amu me oserp e otrom uotse aroga rev edop omoc sam ,sazeuqir satium ohnet ,orielavac mu are ue assap adiv ahnim me e ,jeaN é emon ueM"
         E antes de sair você escuta "RIAS ED SETNA ASEM AN SEZEV 2 ATAB UEDNETNE ECOV ES" ou algo similar.
-        <b style="font-size: 28px">O que fazer?</b> 
-<a><button class ="botao" onclick="bater_mesa()">Bater na mesa</button></a> 
-<a><button class ="botao" onclick="sair_assustado()">Sair</button></a> 
-<a><button class ="botao" onclick="ja_sei_codigo()">Descobri o código!</button></a>`
+        <b style="font-size: 28px">O que fazer?</b>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="bater_mesa()">Bater na mesa</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="sair_assustado()">Sair</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="ja_sei_codigo()">Descobri o código!</button></a>`
     }
     //
     //
@@ -317,9 +396,15 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você bate na mesa e a sombra acena com a cabeça. Você não entende muito bem o que aconteceu... ou entende. Por algum motivo, você sente uma urgência para ir à floresta. 
-        <b style="font-size: 28px">Qual floresta ir?</b> 
-<a><button class ="botao" onclick="floresta_sem_lago()">Floresta sem lago</button></a> 
-<a><button class ="botao" onclick="encontrar_upl()">Floresta com lago</button></a>`
+        <b style="font-size: 28px">Qual floresta ir?</b>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="floresta_sem_lago()">Floresta sem lago</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="encontrar_upl()">Floresta com lago</button></a>`
     }
     function sair_assustado() {
         var fundo = document.getElementById('fundo');
@@ -327,7 +412,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Isso já foi demais, você sai assustado em direção a próxima cidade
-<a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
         //Ir ao cassino
     }
     function ja_sei_codigo() {
@@ -336,7 +424,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `A sombra não parece entender o que você disse, e some junto a todas as luzes e sons da taverna.
-<a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
         //Ir ao cassino
     }
     function floresta_sem_lago() {
@@ -346,13 +437,30 @@
         var content = document.getElementById("content");
         content.innerHTML = `Chegando a floresta sem o lago, você percebe uma cova ao seu lado. E flores coloridas ao redor da região.
         <b style="font-size: 28px">Qual flor colocar?</b>
-        
-<a><button class ="botao" onclick="laranja()">Laranjas</button></a>
-<a><button class ="botao" onclick="azul()"> Azuis</button></a>
-<a><button class ="botao" onclick="laranja()">Rosas</button></a>
-<a><button class ="botao" onclick="laranja()">Verdes</button></a>
-<a><button class ="botao" onclick="laranja()">Um punhado de grama</button></a>
-<a><button class ="botao" onclick="laranja()">Amarelas</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="laranja()">Laranjas</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="azul()"> Azuis</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="laranja()">Rosas</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="laranja()">Verdes</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="laranja()">Um punhado de grama</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="laranja()">Amarelas</button></a>`
     }
     function azul() {
         var fundo = document.getElementById('fundo');
@@ -360,7 +468,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você coloca as flores azuis na cova e algo surreal parece acontecer. Um brilho muito forte emana das flores e a sombra da taverna aparece a sua frente, agora com o formato de um cavaleiro, ele diz com uma voz fantasmagórica "Muito obrigado, você me libertou de minha maldição, aqui, isso é para você, e te entrega um pergaminho com um feitiço chamado 'onda cósmica' e oferece te levar até sua vila", você passa o resto do dia tentando estudar o pergaminho e percebe que agora tem a capacidade de flutuar, antes de chegar de fato a sua vila.
-<a><button class ="botao" onclick="quebrar_maldiçao()">Ir para sua vila natal</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="quebrar_maldiçao()">Ir para sua vila natal</button></a>`
         //Ir para a vila natal
     }
     function laranja() {
@@ -369,7 +480,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você coloca as posiciona as flores, mas nada parece acontecer. Você decide ir para a próxima cidade.
-<a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
         //Ir ao cassino
     }
     function quebrar_maldiçao() {
@@ -379,7 +493,10 @@
         var content = document.getElementById("content");
         content.innerHTML = `Você caminha em mais uma estrada tranquila, apenas alguns comerciantes e peregrinos passam por você, mas todos estão ou com pressa, ou são bem amigáveis. No entanto, após horas de caminhar, você chega a próxima cidade e você percebe que é sua vila natal, destruída e em chamas, você percebe que a batalha ainda está acontecendo, e ao olhar mais perto das casas, percebe que androides como aquele que você viu quando acordou no deserto estão atacando sua vila e saqueando as casas, os moradores da vila também estão atacando os androides com seus últimos recursos, e a batalha não parece ter fim. Os androides ainda não te notaram, e parece que 7 deles ainda sobraram. Você lembra do feitiço onda cósmica.
         <b style="font-size: 28px">Usar ou não o feitiço?</b> 
-<a><button class ="botao" onclick="arauto_cosmico()">Usar</button></a> `
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="arauto_cosmico()">Usar</button></a> `
     }
     function arauto_cosmico() {
         var fundo = document.getElementById('fundo');
@@ -410,9 +527,15 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você segue para a próxima cidade, uma cidade antes da sua vila natal. A viagem é longa e pacata, nos dias que você passa viajando, você encontra comerciantes, animais silvestres e árvores frutíferas, porém ao chegar na em Untherak, você se depara com uma cidade animada e cheia de luzes. Você fica impressionado, e ao pisar dentro da cidade, um grupo de orcs te chamam para entrar em um cassino. Seus sentidos mágicos apontam para uma mágia vil vinda do cassino. 'Opa opa! Vem cá amigo, tá tudo mundo com sorte hoje no Cassino do Orc Azul, o último acabou de ganhar 100 peças de ouro! haha'
-        <b style="font-size: 28px">Entrar no cassino?</b> 
-<a><button class ="botao" onclick="ganancia_cassino()">Sim</button></a> 
-<a><button class ="botao" onclick="ignorar_cassino()">Não</button></a>`
+        <b style="font-size: 28px">Entrar no cassino?</b>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="ganancia_cassino()">Sim</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="ignorar_cassino()">Não</button></a>`
     }
 
     function conhecer_anciao() {
@@ -421,11 +544,31 @@
         fundo.style.backgroundImage = "url('./imgs/phantom.gif')";
 
         var content = document.getElementById("content");
-        content.innerHTML = `Apesar de ser perigoso, você resolve seguir o vulto, enquanto caminham ele explica "Sua vila foi atacada por mecanoides de batalha, a mando de saqueadores dos navios vermelhos, sem motivo algum, apenas para saquear seu lar e conseguir espólios, você como um grande feiticeiro, tentou ajudar sua vila com diversos feitiços, mas como haviam feiticeiros, bruxos, magos e guerreiros do outro lado, você acabou perdendo e sua saída foi se teleportar para longe dali, você acaba sendo atacado por um dos forjados, e ele se teleporta junto com você para um lugar distante, porém, antes de se teleportar, um mago tentou soltar uma magia de esquecimento em você, que surtiu efeito, e você acaba esquecendo tudo que havia passado. Após um tempo, você descobre que na verdade eles foram mandados para atacar sua vila não só pelo saque, mas por uma runa mágica que estava escondida debaixo do terreno da vila." Você é a única esperança para que a sua vila seja salva... Tome esse pergaminho, é um feitiço muito poderoso que só você pode usar pela energia que absorveu da runa escondida. Além disso, também tenho esse poderoso feitiço de telecinese, sua memória deve voltar e você será capaz de usar com facilidade, no entanto use com sabedoria. O vulto remove sua capa e revela ser o ancião da vila, Samurai Gomus, mas com muitas cicatrizes e ferimentos mágicos no rosto. Ele abre um portal para você, e diz "Entre, esse portal vai te levar ao campo de batalha, na hora certa, use a magia que te ensinei, infelizmente não poderei acompanhar, usei meus ultimos resquícios de magia para abrir esse portal e te ensinar essas magias. Boa sorte <nome>!"
-            <b style="font-size: 28px">Entrar no portal?</b> 
-    <a><button class ="botao" onclick="vila_natal_runa()">Entrar no portal</button></a> 
-    <a><button class ="botao" onclick="cassino()">Negar e seguir para a próxima cidade</button></a>`
+        content.innerHTML = `Apesar de ser perigoso, você resolve seguir o vulto, enquanto caminham ele explica "Sua vila foi atacada por mecanoides de batalha, a mando de saqueadores dos navios vermelhos, sem motivo algum, apenas para saquear seu lar e conseguir espólios, você como um grande feiticeiro, tentou ajudar sua vila com diversos feitiços, mas como haviam feiticeiros, bruxos, magos e guerreiros do outro lado, você acabou perdendo e sua saída foi se teleportar para longe dali, você acaba sendo atacado por um dos forjados, e ele se teleporta junto com você para um lugar distante, porém, antes de se teleportar, um mago tentou soltar uma magia de esquecimento em você, que surtiu efeito, e você acaba esquecendo tudo que havia passado. Após um tempo, você descobre que na verdade eles foram mandados para atacar sua vila não só pelo saque, mas por uma runa mágica que estava escondida debaixo do terreno da vila." Você é a única esperança para que a sua vila seja salva... Tome esse pergaminho, é um feitiço muito poderoso que só você pode usar pela energia que absorveu da runa escondida. Além disso, também tenho esse poderoso feitiço de telecinese, sua memória deve voltar e você será capaz de usar com facilidade, no entanto use com sabedoria. 
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="conhecer_anciao_parte_dois()">Conntinuar</button></a>`
     }
+
+    function conhecer_anciao_parte_dois() {
+        //Você conhece o ancião da vila, parte 2
+        var fundo = document.getElementById('fundo');
+        fundo.style.backgroundImage = "url('./imgs/phantom.gif')";
+
+        var content = document.getElementById("content");
+        content.innerHTML = `O vulto remove sua capa e revela ser o ancião da vila, Samurai Gomus, mas com muitas cicatrizes e ferimentos mágicos no rosto. Ele abre um portal para você, e diz "Entre, esse portal vai te levar ao campo de batalha, na hora certa, use a magia que te ensinei, infelizmente não poderei acompanhar, usei meus ultimos resquícios de magia para abrir esse portal e te ensinar essas magias. Boa sorte!
+            <b style="font-size: 28px">Entrar no portal?</b> 
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="vila_natal_runa()">Entrar no portal</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="cassino()">Negar e seguir para a próxima cidade</button></a>`
+    }
+
 
     function encontrar_upl() {
         //Você corre do ancião e encontra a UPL
@@ -434,9 +577,15 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você corre do vulto assutador em direção a uma floresta próxima. Assustado, sua primeira reação é se esconder do vulto em meio as árvores. O vulto passa por ela e parece não te ver. Algumas horas se passam e você sai do esconderijo, ao sair você percebe que um grupo de personagens bem diferentes fica te olhando com um olhar curioso. O grupo é composto por um morcego careca, uma pomba cromática, um pintinho timido, um anão forte, um androide de batalha, piguim de bigode e um livro falante com o título Saraivus. Você fica confuso, mas o pinguim te entrega um pedaço de papel com a seguinte mensagem : "SOMOS A UPL(UNIÃO DE PEQUENOS LÁRAPIOS") PASSE TODOS OS SEUS PERTENCES PARA NÓS AGORA", e o pinguim aponta um pedaço de frango frito para a sua cara como se fosse uma arma enquanto fala algo como "MACETAREI". Isso era uma ameaça? 
-        <b style="font-size: 28px">Enfim, passar os pertences ou não?</b> 
-<a><button class ="botao" onclick="ser_roubado_upl()">Aceitar e passar seus pertences</button></a> 
-<a><button class ="botao" onclick="nao_ser_roubado_upl()">Não passar seus pertences</button></a>`
+        <b style="font-size: 28px">Enfim, passar os pertences ou não?</b>
+            <br>
+            <br>
+            <div class="pao"> 
+            <a><button class ="botao" onclick="ser_roubado_upl()">Aceitar e passar seus pertences</button></a> 
+            <br>
+            <br>
+            <div class="pao">
+            <a><button class ="botao" onclick="nao_ser_roubado_upl()">Não passar seus pertences</button></a>`
     }
 
     function ser_roubado_upl() {
@@ -446,7 +595,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você passa seus pertences...?? Até mesmo a UPL acha sua ação estranha, eles saem com o mesmo olhar e fogem para o lago. De longe você percebe que eles estão bebendo junto a um carangueijo em uma garrafa... Quando chega um humano calvo, e dispersa todos os larápios, e fala "Foi mal, eles são assim mesmo, toma aqui seus pertences" Após perguntar quem era ele, o homem respode "Sou kaio, o líder deles, to tentando mudar a reputação deles aqui pelo bosque". Você agradece e sai... Agora você nunca saberá se isso foi um sonho esquisito ou não...
-<a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="cassino()">Ir para a próxima cidade</button></a>`
         //Ir ao cassino
     }
 
@@ -457,9 +609,15 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você não passa seus pertences. "Por favor?" pede o morcego careca enquanto explica que só está roubando pois sua loja de ferramentas para morcegos foi arrombada e agora ele precisa de ajuda para viver próximo ao lago, junto aos peixes, você começa a ficar com dó do morcego, enquanto a pomba ri descontroladamente. 
-        <b style="font-size: 28px">Ajudar o morcego com seu dinheiro?</b> 
-<a><button class ="botao" onclick="ajudar_morcego()">Sim</button></a> 
-<a><button class ="botao" onclick="conhecer_tiao()">Não</button></a>`
+        <b style="font-size: 28px">Ajudar o morcego com seu dinheiro?</b>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="ajudar_morcego()">Sim</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="conhecer_tiao()">Não</button></a>`
     }
     function ajudar_morcego() {
         //Você ajuda o morcego
@@ -469,8 +627,14 @@
         var content = document.getElementById("content");
         content.innerHTML = `Você ajuda ele, sentiu que o morcego era uma boa pessoa, você entrega 10 peças de ouro, e o morcego se enche de alegria, depois de muita conversa com a UPL, você entende muitas coisas, uma conversa sobre carrinhos de brinquedo que nínguem brinca mais, uma conversa sobre a caça ao tesouros na casa do morcego, e da rivalidade entre o anão e o livro. Agora você se sente parte deles, aproveitando essa oportunidade, o morcego te pergunta se você não quer trabalhar para ele como funcionário da nova loja.
         <b style="font-size: 28px">Você aceita?</b> 
-<a><button class ="botao" onclick="ser_funcionario_abrofts()">Aceitar</button></a> 
-<a><button class ="botao" onclick="conhecer_tiao()">Negar</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="ser_funcionario_abrofts()">Aceitar</button></a> 
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="conhecer_tiao()">Negar</button></a>`
     }
     function conhecer_tiao() {
         //Você nega ajudar o morcego e conhece tião e suas caronas confiáveis
@@ -481,8 +645,14 @@
         content.innerHTML = `
         Não. Você acabou de conhecer eles, a UPL fica triste, mas agradece por ter participado dessa aventura. Você se despede da UPL, e sai da floresta atravessando pelo lago. No final do bosque você encontra mais um humano, que se apresenta como Tião te oferece 10 moedas para chegar na sua cidade mais rápido.
         <b style="font-size: 28px">Você aceita?</b> 
-<a><button class ="botao" onclick="pegar_carona_tiao()">Aceitar</button></a> 
-<a><button class ="botao" onclick="cassino()">Negar</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="pegar_carona_tiao()">Aceitar</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class ="botao" onclick="cassino()">Negar</button></a>`
 
     }
 
@@ -503,7 +673,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você pega carona com a figura, a pomba cromática e o livro falante vão junto, afinal apenas Tião é confiável para dirigir carruagens. Chegando no seu destino, você agradece Tião pela carona, e o Livro Falante pela ajuda ao criar este jogo.
-<a><button class ="botao" onclick="vila_natal()">Seguir</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="vila_natal()">Seguir</button></a>`
 
         //Chegar na vila natal
     }
@@ -525,7 +698,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você quase é atraído pela magia do cassino, mas conseguiu ignorar com muito esforço e ir em direção a sua vila natal.
-<a><button class ="botao" onclick="vila_natal()">Continuar</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="vila_natal()">Continuar</button></a>`
         //Ir a vila natal
     }
 
@@ -536,9 +712,15 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você entra no portal, e se depara com sua vila em chamas, com androides atacando toda sua vila e seus amigos, familiares e conhecidos, você lembra do feitiço agora, mas não sente que é hora de usa-lo. A runa embaixo da terra, é isso que eles querem não? É simples, só entregar para eles então!
-        <b style="font-size: 28px">Entregar a runa</b>, ou lutar? 
-<a><button class ="botao" onclick="rajada_congelante()">Lutar</button></a> 
-<a><button class ="botao" onclick="entregar_runa()">Entregar</button></a>`
+        <b style="font-size: 28px">Entregar a runa</b>, ou lutar?
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="rajada_congelante()">Lutar</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="entregar_runa()">Entregar</button></a>`
     }
 
     function rajada_congelante() {
@@ -579,9 +761,15 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você se concentra mas não lembra de muita coisa, mas ao olhar para os lados, você percebe que sua antiga casa, em chamas, se encontra ao seu lado, e também tem um bastão com espinhos do seu outro lado próximo a um barril. 
-        <b style="font-size: 28px">Usar o bastão, ou ir para a sua casa?</b> 
-<a><button class="botao" onclick="lutar_bastao()">Bastão</button></a> 
-<a><button class="botao" onclick="casa_chamas()">Casa</button></a>`
+        <b style="font-size: 28px">Usar o bastão, ou ir para a sua casa?</b>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class="botao" onclick="lutar_bastao()">Bastão</button></a>
+        <br>
+        <br>
+        <div class="pao"> 
+        <a><button class="botao" onclick="casa_chamas()">Casa</button></a>`
     }
 
     function lutar_bastao() {
@@ -592,7 +780,10 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `Você pega o bastão e sai correndo em direção aos androides, você consegue derrubar o primeiro com um impacto muito rápido, mas quando ele cai no chão, os outros acabam caputurando você e levando até seu barco, seu destino agora é ser prisioneiro da maldita tripulação
-<a><button class ="botao" onclick="morrer()">MORTE</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="morrer()">MORTE</button></a>`
     }
 
     function casa_chamas() {
@@ -603,9 +794,15 @@
         var content = document.getElementById("content");
         content.innerHTML = `Você adentra sua casa em chamas. E sai para o seu antigo quarto de estudos. Lá você encontra um pergaminho com um feitiço chamado "Bola de fogo", e encontra também um anel
         dourado e aparentemente mágico com uma placa "CUIDADO" ao lado. 
-        <b style="font-size: 28px">Pegar o anel, ou o pergaminho?</b> 
-<a><button class ="botao" onclick="anel_portal()">Anel</button></a> 
-<a><button class ="botao" onclick="pergaminho_casa_chamas()">Pergaminho</button></a>`
+        <b style="font-size: 28px">Pegar o anel, ou o pergaminho?</b>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="anel_portal()">Anel</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="pergaminho_casa_chamas()">Pergaminho</button></a>`
     }
 
     function pergaminho_casa_chamas() {
@@ -616,8 +813,14 @@
         var content = document.getElementById("content");
         content.innerHTML = `Você lê o enorme pergaminho e sua memória começa a voltar, dois feitiços surgem em sua mente, são complexos, mas você dá conta. Só tem um problema, um dos feitiços tem um poder de destruição imenso que parte do conjurador, ou seja, você, e o outro feitiço exige um sacríficio. O ferreiro, açogueiro e alguns habitantes da sua vila vila está lutando contra 2 dos androides. Eles vão morrer de qualquer jeito, mas se você usar o feitiço Raio Vil agora, eles morrerão e o resto da sua vila fica protegida. Ou você pode atrair a atenção dos androides você mesmo, e usar a Bola de Fogo aonde você está, assim o ferreiro não vai morrer, e a vila estará salva. Mas você provavelmente não vai sair vivo.
         <b style="font-size: 28px">Usar o feitiço de fogo, ou o feitiço vil?</b> 
-<a><button class ="botao" onclick="raio_vil()">Vil</button></a> 
-<a><button class ="botao" onclick="bola_de_fogo()">Fogo</button></a>`
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="raio_vil()">Vil</button></a>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="bola_de_fogo()">Fogo</button></a>`
     }
 
     function raio_vil() {
@@ -648,8 +851,11 @@
 
         var content = document.getElementById("content");
         content.innerHTML = `você lê a palavra "PORTAL", você corre para o campo de batalha esperando que o anel te salve. No meio da vila, você pula na cabeça de um dos androides, e usa sua adaga para matar um dos mecanoides, os outros tentam te atacar e acabam te cercando, você está indefeso e sua adaga caiu bem longe.
-        <b style="font-size: 28px">O que fazer?</b> 
-<a><button class ="botao" onclick="portal_pirata()">Gritar PORTAL!</button></a>`
+        <b style="font-size: 28px">O que fazer?</b>
+        <br>
+        <br>
+        <div class="pao">
+        <a><button class ="botao" onclick="portal_pirata()">Gritar PORTAL!</button></a>`
     }
 
     function portal_pirata() {

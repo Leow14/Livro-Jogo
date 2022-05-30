@@ -1,8 +1,8 @@
 .box {
     width: 43vw;
     height: 96vh;
-    background: #fff;
-    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.679);
+    /* opacity: 0.5 */
     text-align: center;
 }
 
@@ -40,8 +40,8 @@ body{
     margin: center;
     padding-left: 2vw;
     position: relative;
-    left:20%;
-    top:40%;
+    left:19%;
+    top:23%;
     
 }
 
@@ -82,7 +82,7 @@ input{
 }
 
 .box-game{
-    border: 5px solid rgb(29, 34, 2);
+    border: 5px solid rgb(97, 60, 4);
     display: flex;
     flex-wrap: wrap;
 }
@@ -118,11 +118,50 @@ button:active {
     height: auto;
 }
 
+.nome{
+    text-align: center;
+    padding-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
 
+.botao_principal{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    padding-left: 2vw;
+    position: relative;
+    left:30%;
+    top:60%;
+}
+
+.letra{
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+    margin: center;
+    padding-left: 24%;
+    position: relative; 
+    /* left:10%;*/
+    top:10%; 
+    font-size: 30px;
+}
   /* //style="padding: 15px 25px; font-size: 24px; text-align: center; cursor: pointer; outline: none; color: rgb(255, 255, 255); background-color: #04AA6D; border: none;  border-radius: 15px; box-shadow: 0 9px #999; */
 
 
 
 
+/* 
+  function typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+        setTimeout(function () {
+            elemento.innerHTML += letra;
+        }, 30 * i)
+    })
+}
 
-
+var titulo = document.getElementById('historia-espadachim')
+typeWrite(titulo); */
