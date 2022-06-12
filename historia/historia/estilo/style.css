@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 50vw;
+    height: 95vh;
+    background: rgba(169, 165, 159, 0.679);
+    text-align: center;
+}
+
+body {
+    background-image: url(imgs/desert.png);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica;
+    max-width: fit-content;
+}
+
+
+
+/* input{
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    
+} */
+
+/* aaaaaaaaaaaaaaaaa */
+
+
+
+/* aaaaaaaaaaaaaaaaa */
+
+
+.form__field{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    padding-left: 20vw;
+    padding-top: 19vh;
+    
+}
+
+.texto{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;  
+}
+
+.botao{
+    width: 51px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 5px 0 0 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.box-game{
+    border: 5px solid rgb(97, 60, 4);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    
+    padding: 15px 25px;
+    padding: 50px;
+    height: auto;
+    width: auto;
+    font-size: 3px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: 3s;
+    background-image: linear-gradient(326deg, #5f0a87 0%, #a4508b 74%);
+    
+  }
+
+button:hover {
+    background-color: #795005;
+    box-shadow: 2px 3px #999;
+    background-color: #a4508b;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #0d324d 0%,  #7f5a83 74%);
+
+
+}
+  
+button:active {
+    background-color: #e79b0e;
+    box-shadow: 0 3px rgb(58, 57, 57);
+    transform: translateY(4px);
+
+  } 
+
+.pao button{
+    width: auto;
+    height: auto;
+}
+
+.nome{
+    text-align: center;
+    padding-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_principal{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    padding-left: 2vw;
+    position: relative;
+    left:30%;
+    top:60%;
+}
+
+.letra{
+    justify-content: center;
+    align-items: center; 
+    margin: center;
+    position: relative; 
+    left:15%;
+    top:20%;  
+    font-size: 30px;
+}
+
+.p{
+    font-size: 100000px;
+}
+
+  /* //style="padding: 15px 25px; font-size: 24px; text-align: center; cursor: pointer; outline: none; color: rgb(255, 255, 255); background-color: #04AA6D; border: none;  border-radius: 15px; box-shadow: 0 9px #999; */
+
+
+
+
+/* 
+  function typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+        setTimeout(function () {
+            elemento.innerHTML += letra;
+        }, 30 * i)
+    })
+}
+
+var titulo = document.getElementById('historia-espadachim')
+typeWrite(titulo); */
+
+/* .box p{
+    font-size: 10000px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5vw;
+} */

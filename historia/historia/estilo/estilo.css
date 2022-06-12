@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    z-index: 1;
+    width: 50vw;
+    height: 95vh;
+    background: rgba(169, 165, 159, 0.679);
+    text-align: center;
+}
+body {
+    background-image: url(imgs/desert.png);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica;
+    max-width: fit-content;
+}
+
+input{
+    padding: 30px;
+    font-size: 30px;
+    border: none;
+    
+    /* padding-left: 20px; */
+}
+
+.input{
+
+    flex-direction: row;
+    margin: center;
+    padding-left: 16%;
+    position: absolute;
+    top:40%;
+    
+}
+.botao{
+    width: 51px;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    position: absolute;  z-index: 999;
+    padding: 40px 0 0 8px;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.box-game{
+    border: 10px solid rgb(139, 89, 15);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+button{
+    padding: 15px 25px;
+    height: auto;
+    width: auto;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #aa7004;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-image: linear-gradient(326deg, #5f0a87 0%, #a4508b 74%);
+    
+  }
+
+  button:hover {
+    background-color: #795005;
+    box-shadow: 2px 3px #999;
+    background-color: #a4508b;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #0d324d 0%,  #7f5a83 74%);
+
+
+}
+
+button:active {
+    background-color: #e79b0e;
+    box-shadow: 0 3px rgb(58, 57, 57);
+    transform: translateY(4px);
+
+  }
+  
+  .pao button{
+    width: auto;
+    height: auto;
+}
+
+.nome{
+    text-align: center;
+    padding-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_principal{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    position: relative;
+    left:33%;
+    top:60%;
+}
+
+.letra{
+    justify-content: center;
+    align-items: center; 
+    margin: center;
+    position: relative; 
+    left:0%;
+    top:10%;  
+    font-size: 45px;
+}
+
