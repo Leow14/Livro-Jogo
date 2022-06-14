@@ -1,5 +1,7 @@
 var t;
 
+
+
 function morrer() {
     var fundo = document.getElementById('fundo');
     fundo.innerHTML = ``
@@ -12,6 +14,9 @@ function iniciar() {
 }
 
 function inicio() {
+    var fundo = document.getElementById('fundo');
+    fundo.style.backgroundImage = "url('./imgs/desert.png')";
+
     var content = document.getElementById("content");
     content.innerHTML = `<div>Seu nome é  ${nome}. E você é um jovem feiticeiro de uma vila pequena costeira, você gosta de viajar e se aventurar por diversos e diferentes lugares pelo continente. No entanto, você não lembra de ir pra um gigantesco deserto sem vegetação e aparentemente muito longe de qualquer mar, e infelizmente é nesse deserto aonde você se encontra agora. Ao seu lado, um "forjado da guerra", se encontra caído ao seu lado, sem bateria e perdido também. Forjados da guerra são constructos de metal sencientes. Ao lado do mecanoide, você encontra um mapa que mostra não só aonde você está, mas as regiões próximas. E sua casa, para sua surpresa, está MUITO longe. Existem duas cidades próximas de você, e as duas te deixam mais próximo da sua cidade natal. Uma das opções é uma cidade fantasma, sem habitantes e bem assustadora, mas com uma estrada que leva você até lá em segurança, e a outra é uma cidade de elfos acolhedores em um bosque próximo, o problema é que essa cidade tem um trajeto perigoso que atravessa o bosque.  Caminhando você verifica sua mochila em busca de alguma coisa útil. Mas ela está quase vazia, com a excessão de algumas peças de ouro, um livro de origem mágica, e uma adaga, talvez esses itens sejam úteis para voltar para a sua casa.<div class="pergunta">Qual caminho  ${nome} deve seguir?</div>
         <br>
@@ -505,7 +510,7 @@ function conhecer_anciao() {
     <br>
     <br>
     <div class="pao">
-    <a><button class ="botao" onclick="conhecer_anciao_parte_dois()">Conntinuar</button></a>`
+    <a><button class ="botao" onclick="conhecer_anciao_parte_dois()">Continuar</button></a>`
 }
 
 function conhecer_anciao_parte_dois() {
@@ -823,6 +828,24 @@ function portal_pirata() {
 
     var content = document.getElementById("content");
     content.innerHTML = `Você grita "PORTAL!", e pequenos portais acabam puxando todas as pessoas para portais estranhos e de uma coloração roxa, eles acabam sugando não só os androides, mas você e os moradores da vila. Vocês caem todos no meio do oceano, com pedaços de suas casas caindo no meio da água. MUITOS PEDAÇOS. Um pedaço gigante de um muro cai por cima dos androides. Quando tudo para de cair, você monta um pequeno abrigo com objetos que flutuam, e invade o navio pirata dos androides que estava por perto, agora você e sua antiga vila são Capitão ${nome} e sua tripulação.`
+}
+
+function menu2() {
+    var fundo = document.getElementById('fundo');
+    fundo.style.backgroundImage = "url('./imgs/inicial.jpg')";
+
+    var content = document.getElementById("content");
+    content.innerHTML = `<div class="titulo">
+    <p class="letra">Qual o seu nome aventureiro?</p>
+
+<div>
+    <div class ="input"> 
+        <a><input id="nome" placeholder="Nome"> </input></a>
+        <p class="aviso">*por favor insira um nome</p>
+    </div>
+<div class="botao_principal">
+    <button onclick="iniciar() ; inicio()"> Continuar </button>
+</div>`
 }
 
 function exemplo() {

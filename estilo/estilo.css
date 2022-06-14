@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.box {
+    width: 50vw;
+    height: 95vh;
+    background: rgba(169, 165, 159, 0.679);
+    text-align: center;
+}
+body {
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, Helvetica;
+    max-width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input{
+    padding: 30px;
+    font-size: 30px;
+    border: none;
+}
+
+.input{
+
+    flex-direction: row;
+    margin: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 13vh;
+    
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 40px 0 0 8px;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.box-game{
+    border: 10px solid rgb(139, 89, 15);
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button{
+    padding: 15px 25px;
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #aa7004;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    background-image: linear-gradient(326deg, #5f0a87 0%, #a4508b 74%);
+    
+  }
+
+  button:hover {
+    background-color: #795005;
+    box-shadow: 2px 3px #999;
+    background-color: #a4508b;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #0d324d 0%,  #7f5a83 74%);
+
+
+}
+
+button:active {
+    background-color: #e79b0e;
+    box-shadow: 0 3px rgb(58, 57, 57);
+    transform: translateY(4px);
+
+  }
+  
+  .pao button{
+    width: auto;
+    height: auto;
+}
+
+.nome{
+    text-align: center;
+    padding-top: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_principal{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top : 20vh;
+}
+
+.letra{
+    justify-content: center;
+    align-items: center; 
+    margin: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 45px;
+}
+
+.pergunta{
+    font-size: 28px
+}
+
+.aviso{
+    color: yellowgreen;
+    font-size: 20px;
+    font-style: oblique;
+    -webkit-text-stroke: 0.5px black;
+}
+/* PARTE DOS BOTÕES TELA MENU */
+
+.botao_principal_classe{
+    padding: 10px;
+    width: 300px;
+    height: 70px;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #5e3e7d 0%, #42539e 74%);
+}
+/*                                    */
+.botao_principal_guerreiro:hover{
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+
+}
+
+.botao_principal_druida:hover{
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
+}
+
+.botao_principal_feiticeiro:hover{
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+
+}
+
+.botao_principal_ladino:hover{
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+}
+
+.botao_principal_paladino:hover{
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+
+}
+
+.esp_botao_principal_guerreiro{
+    padding-top: 15px;
+    
+}
+
+.esp_botao_principal_feiticeiro{
+    padding-top: 15px;
+}
+
+.esp_botao_principal_druida{
+    padding-top: 15px;
+}
+
+.esp_botao_principal_paladino{
+    padding-top: 15px;
+}
+
+.esp_botao_principal_ladino{
+    padding-top: 15px;
+}
